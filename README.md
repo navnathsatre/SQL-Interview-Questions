@@ -402,3 +402,47 @@ __RDBMS:__
 4. Data in tabular form so relationship between data values store in table
 5. It support distributed database
 6. Ex. Mysql, postgre, SQL Server
+
+## 30. Which function is used to return the remainder in a division operator in SQL ?
+```
+SELECT MOD(27, 5) AS “value”;
+```
+## 31. What is the diff between CHAR and VARCHAR datatype in SQL ?
+__CHAR:__
+1. To store character string of fixed length
+2. If length of string is less then it is padded with extra space
+3. Use when data value is of same length
+4. Faster 
+
+__VARCHAR:__
+1. To store character string of variable length
+2. If length of string is less then it is without padded with extra space
+3. Use when data value is of diff length
+4. Slower 
+
+## 32. What are scalar functions in SQC ?
+Inbuilt function, whatever input output will always single value
+```
+LENGTH(), UCASE(), LCASE(), MID(), ROUND(), NOW(), CONCAT(), RAND(), FORMAT()
+```
+## 33. What is UNION, UNION ALL, INTESECT, MINUS ?
+__UNION:__
+Combine the result of two or more select statements by removing duplicates. Columns and data types must be same in select statements
+```
+SELECT col FROM table1 UNION SELECT col FROM table2;
+```
+__UNION ALL:__
+Same with union but not removing duplicates
+```
+SELECT col FROM table1 UNION ALL SELECT col FROM table2;
+```
+__INTERSECT:__
+Returns the common records from two or more select statements
+```
+SELECT col FROM table1 INTERSECT SELECT col FROM table2;
+```
+__MINUS:__
+Return the first query which is not found in 2nd query. Also it does not return the duplicate values
+```
+SELECT col FROM table1 MINUS SELECT col FROM table2;
+```
